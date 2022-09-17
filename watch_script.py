@@ -37,7 +37,7 @@ except:
 
 try:
     # Create the tgtg client with my credentials
-    tgtg_client = TgtgClient(access_token=config['tgtg']['access_token'], refresh_token=config['tgtg']['access_token'], user_id=config['tgtg']['access_token'])
+    tgtg_client = TgtgClient(access_token=config['tgtg']['access_token'], refresh_token=config['tgtg']['refresh_token'], user_id=config['tgtg']['user_id'])
 except:
     print(f"Failed to obtain TGTG credentials.\nRun \"python3 {sys.argv[0]} <your_email>\" to generate TGTG credentials.")
     exit(1)
